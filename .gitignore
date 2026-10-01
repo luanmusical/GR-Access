@@ -1,0 +1,33 @@
+# ============================================================================
+# GR-Access -- o que NÃO entra no repositório
+# ============================================================================
+# Este repositório é público, mas distribui só o executável já compilado e os
+# manuais (aba Releases). O código-fonte (Python, C) e os binários de build
+# ficam de fora de propósito -- permanecem só na máquina de desenvolvimento.
+
+# Código-fonte e binários de build
+*.py
+*.pyw
+*.c
+*.h
+*.dll
+*.ps1
+*.json
+*.syx
+*.g5l
+
+# Saída de empacotamento (Nuitka) -- 100% gerada a partir do código-fonte
+build/
+dist/
+*.build/
+*.dist/
+*.onefile-build/
+*.zip
+
+# Cache de bytecode do Python
+__pycache__/
+*.pyc
+
+# Configuração e logs locais (ficam em %APPDATA%\GR-Access)
+config.json
+erros.log
